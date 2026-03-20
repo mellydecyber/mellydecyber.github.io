@@ -1,5 +1,7 @@
 {
   "name": "Melli Tiara",
+  "initials": "MT",
+  "greeting": "Hi there, I'm",
   "role": "Software Engineer | Blockchain Developer",
   "tagline": "I build scalable systems, smart contracts, and production-grade applications that power real businesses — from government platforms to blockchain ecosystems.",
   "typingTexts": [
@@ -9,9 +11,20 @@
     "Smart Contract Dev",
     "Web3 Builder"
   ],
-  "about": "Software developer with 4+ years of hands-on experience building real-world applications across enterprise, government, and blockchain sectors. I've delivered systems used by millions of users at RCTI+, built smart contracts for Web3 gaming, and designed government information systems serving multiple cities. I thrive on turning complex requirements into clean, working software.",
+  "badges": [
+    { "label": "7+ Years Exp", "color": "accent" },
+    { "label": "Enterprise & Web3", "color": "purple" },
+    { "label": "Blockchain Dev", "color": "pink" },
+    { "label": "Open to Work", "color": "success" }
+  ],
+  "cta": {
+    "primary": { "label": "See My Work", "href": "#projects" },
+    "secondary": { "label": "Get In Touch", "href": "#contact" },
+    "tertiary": { "label": "Resume", "href": "/resume/Melli Tiara - Software Engineer - Blockchain Developer - Resume.pdf", "external": true }
+  },
+  "about": "Software developer with 7+ years of hands-on experience building real-world applications across enterprise, government, and blockchain sectors. I've delivered systems used by millions of users at RCTI+, built smart contracts for Web3 gaming, and designed government information systems serving multiple cities. I thrive on turning complex requirements into clean, working software.",
   "highlights": [
-    "4+ years building production applications",
+    "7+ years building production applications",
     "Delivered systems for government, enterprise & Web3",
     "Currently at RCTI+ (MNC Group) — millions of users",
     "Built smart contracts for blockchain gaming & DeFi",
@@ -19,18 +32,18 @@
   ],
   "location": "Medan, Indonesia",
   "email": "melly.tiara92@gmail.com",
-  "phone": "+6281264348080",
-  "avatar": "/images/avatar.jpg",
+  "phone": null,
+  "avatar": "/images/melli-tiara.jpg",
   "resumeUrl": "/resume/Melli Tiara - Software Engineer - Blockchain Developer - Resume.pdf",
   "status": {
     "availability": "Open to opportunities",
-    "experience": "4+ years",
+    "experience": "7+ years",
     "location": "Medan, Indonesia"
   },
   "socials": [
     {
       "name": "GitHub",
-      "url": "https://github.com/mellitiara",
+      "url": "https://github.com/mellydecyber",
       "icon": "github"
     },
     {

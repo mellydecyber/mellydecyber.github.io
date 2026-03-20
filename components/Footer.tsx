@@ -2,14 +2,14 @@ import profile from "@/data/profile.json";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-border px-5 py-8">
-      <div className="mx-auto max-w-4xl flex flex-col sm:flex-row items-center justify-between gap-4">
+    <footer className="px-5 py-8">
+      <div className="flex flex-col items-center justify-center gap-4 text-center">
         <div className="text-sm text-text-muted">
           &copy; {new Date().getFullYear()}{" "}
           <span className="text-text-bright font-medium">{profile.name}</span>
-          . Built with Next.js & Tailwind CSS.
+          . Design And Built With Love. ❤️
         </div>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center justify-center gap-4">
           {profile.socials.map((social) => (
             <a
               key={social.name}

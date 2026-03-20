@@ -47,6 +47,7 @@ export default function ContactSection() {
                 </div>
               </a>
 
+            { contact.phone && (
               <a
                 href={`tel:${contact.phone}`}
                 className="group flex items-center gap-3 rounded-lg border border-border p-4 transition-all hover:border-purple/30 hover:bg-purple/5"
@@ -63,7 +64,9 @@ export default function ContactSection() {
                   </div>
                 </div>
               </a>
+            )}
 
+            { contact.location && (
               <div className="flex items-center gap-3 rounded-lg border border-border p-4">
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-pink/10">
                   <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" className="text-pink">
@@ -76,7 +79,9 @@ export default function ContactSection() {
                   <div className="text-xs text-text truncate">{contact.location}</div>
                 </div>
               </div>
+            )}
             </div>
+
 
             {/* Social links */}
             <div>
