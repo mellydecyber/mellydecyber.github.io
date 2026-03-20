@@ -1,0 +1,22 @@
+{
+  "email": "hello@alexcommander.dev",
+  "headline": "Let's Build Something Together",
+  "description": "Got a project in mind or want to collaborate? I'm always open to discussing new ideas and opportunities.",
+  "socials": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com",
+      "icon": "github"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://linkedin.com",
+      "icon": "linkedin"
+    },
+    {
+      "name": "Twitter",
+      "url": "https://twitter.com",
+      "icon": "twitter"
+    }
+  ]
+}

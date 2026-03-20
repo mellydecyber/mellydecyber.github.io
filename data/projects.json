@@ -1,0 +1,58 @@
+[
+  {
+    "id": "neural-api",
+    "name": "NeuralAPI",
+    "description": "High-throughput ML inference API serving 10K+ requests/sec with auto-scaling and model versioning.",
+    "techStack": ["Python", "FastAPI", "PyTorch", "Docker", "Kubernetes"],
+    "metrics": {
+      "requests": "10K+/sec",
+      "latency": "<50ms p99",
+      "uptime": "99.99%"
+    },
+    "github": "https://github.com",
+    "live": "https://example.com",
+    "status": "active"
+  },
+  {
+    "id": "data-forge",
+    "name": "DataForge",
+    "description": "Real-time data pipeline processing 2TB+ daily with automated quality checks and alerting.",
+    "techStack": ["Go", "Apache Kafka", "ClickHouse", "Grafana"],
+    "metrics": {
+      "throughput": "2TB+/day",
+      "pipelines": "45 active",
+      "accuracy": "99.8%"
+    },
+    "github": "https://github.com",
+    "live": null,
+    "status": "active"
+  },
+  {
+    "id": "chain-guard",
+    "name": "ChainGuard",
+    "description": "Smart contract auditing tool with AI-powered vulnerability detection for EVM-compatible chains.",
+    "techStack": ["Solidity", "TypeScript", "Node.js", "OpenAI API"],
+    "metrics": {
+      "contracts": "500+ audited",
+      "vulns": "1.2K detected",
+      "chains": "5 supported"
+    },
+    "github": "https://github.com",
+    "live": "https://example.com",
+    "status": "active"
+  },
+  {
+    "id": "deploy-pilot",
+    "name": "DeployPilot",
+    "description": "Zero-downtime deployment orchestrator with canary releases and automatic rollback.",
+    "techStack": ["Rust", "gRPC", "Terraform", "AWS"],
+    "metrics": {
+      "deployments": "3K+/month",
+      "rollbacks": "<0.1%",
+      "teams": "12 active"
+    },
+    "github": "https://github.com",
+    "live": null,
+    "status": "maintenance"
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "name": "Alex Commander",
+  "role": "AI Engineer / Full-Stack Developer",
+  "tagline": "Building intelligent systems that bridge the gap between human intent and machine capability.",
+  "typingTexts": [
+    "AI Engineer",
+    "Backend Architect",
+    "Full-Stack Developer",
+    "System Designer"
+  ],
+  "about": "Senior engineer with 6+ years of experience designing and deploying AI-powered systems, scalable APIs, and production-grade infrastructure. Passionate about clean architecture, developer tooling, and pushing the boundaries of what software can do.",
+  "avatar": "/avatar.png",
+  "resumeUrl": "/resume.pdf",
+  "status": {
+    "system": "All Systems Operational",
+    "uptime": "99.97%",
+    "lastDeploy": "2 hours ago",
+    "activeMissions": 3
+  }
+}

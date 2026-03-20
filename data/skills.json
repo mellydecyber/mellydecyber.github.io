@@ -1,0 +1,34 @@
+{
+  "groups": [
+    {
+      "category": "AI / Machine Learning",
+      "icon": "🧠",
+      "items": ["PyTorch", "TensorFlow", "LangChain", "OpenAI API", "Hugging Face", "MLflow"]
+    },
+    {
+      "category": "Backend",
+      "icon": "⚙️",
+      "items": ["Python", "Go", "Rust", "Node.js", "FastAPI", "gRPC"]
+    },
+    {
+      "category": "Frontend",
+      "icon": "🖥️",
+      "items": ["TypeScript", "React", "Next.js", "Tailwind CSS"]
+    },
+    {
+      "category": "Infrastructure",
+      "icon": "☁️",
+      "items": ["Docker", "Kubernetes", "Terraform", "AWS", "GCP", "CI/CD"]
+    },
+    {
+      "category": "Data",
+      "icon": "📊",
+      "items": ["PostgreSQL", "Redis", "ClickHouse", "Kafka", "Elasticsearch"]
+    },
+    {
+      "category": "Web3",
+      "icon": "🔗",
+      "items": ["Solidity", "Ethers.js", "Hardhat", "EVM"]
+    }
+  ]
+}
