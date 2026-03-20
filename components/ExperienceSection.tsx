@@ -6,61 +6,57 @@ import SectionHeading from "./SectionHeading";
 
 export default function ExperienceSection() {
   return (
-    <section id="experience" className="px-6 py-24">
+    <section id="experience" className="px-4 py-20">
       <div className="mx-auto max-w-4xl">
-        <SectionHeading tag="career.timeline" title="Experience" />
-        <div className="relative">
-          {/* Timeline line */}
-          <div className="absolute left-[7px] top-2 bottom-2 w-px bg-border sm:left-1/2 sm:-translate-x-px" />
+        <SectionHeading tag="git log --career" title="Mission Log" index="04" />
 
-          <div className="flex flex-col gap-8">
-            {experience.map((exp, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-50px" }}
-                className="relative grid grid-cols-1 gap-4 sm:grid-cols-2"
-              >
-                {/* Dot */}
-                <div className="absolute left-[3px] top-3 h-[9px] w-[9px] rounded-full border-2 border-primary bg-bg sm:left-1/2 sm:-translate-x-1/2" />
+        <div className="space-y-0">
+          {experience.map((exp, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ delay: i * 0.05 }}
+              className="relative border-l border-border pl-6 pb-8 last:pb-0 group"
+            >
+              {/* Timeline dot */}
+              <div className="absolute -left-[5px] top-1 h-[9px] w-[9px] rounded-full border-2 border-primary bg-bg group-hover:bg-primary/20 transition-colors" />
 
-                {/* Period (left on desktop) */}
-                <div
-                  className={`pl-8 sm:pl-0 ${
-                    i % 2 === 0 ? "sm:text-right sm:pr-10" : "sm:order-2 sm:pl-10"
-                  }`}
-                >
-                  <span className="font-mono text-xs text-primary">
-                    {exp.period}
+              {/* Period */}
+              <div className="text-[10px] text-text-dim mb-1">
+                <span className="text-primary-dim">[{String(i).padStart(2, "0")}]</span>
+                {" "}{exp.period}
+              </div>
+
+              {/* Role & company */}
+              <div className="mb-2">
+                <h3 className="text-sm font-bold text-text-bright">
+                  {exp.role}
+                </h3>
+                <span className="text-xs text-accent">
+                  @ {exp.company}
+                </span>
+              </div>
+
+              {/* Description */}
+              <p className="text-xs text-text-muted leading-relaxed mb-3">
+                {exp.description}
+              </p>
+
+              {/* Tech */}
+              <div className="flex flex-wrap gap-1">
+                {exp.techStack.map((tech) => (
+                  <span
+                    key={tech}
+                    className="text-[10px] text-primary-dim border border-primary/10 bg-primary/5 px-1.5 py-0.5"
+                  >
+                    {tech}
                   </span>
-                </div>
-
-                {/* Content */}
-                <div
-                  className={`pl-8 ${
-                    i % 2 === 0 ? "sm:pl-10" : "sm:order-1 sm:pr-10 sm:pl-0 sm:text-right"
-                  }`}
-                >
-                  <h3 className="font-bold">{exp.role}</h3>
-                  <p className="mb-2 text-sm text-text-muted">{exp.company}</p>
-                  <p className="mb-3 text-sm leading-relaxed text-text-muted">
-                    {exp.description}
-                  </p>
-                  <div className={`flex flex-wrap gap-1.5 ${i % 2 !== 0 ? "sm:justify-end" : ""}`}>
-                    {exp.techStack.map((tech) => (
-                      <span
-                        key={tech}
-                        className="rounded-md bg-primary/5 px-2 py-0.5 font-mono text-[11px] text-primary"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
+                ))}
+              </div>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>

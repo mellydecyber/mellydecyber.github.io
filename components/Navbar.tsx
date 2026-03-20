@@ -1,39 +1,66 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
-  { label: "About", href: "#about" },
-  { label: "Projects", href: "#projects" },
-  { label: "Skills", href: "#skills" },
-  { label: "Experience", href: "#experience" },
-  { label: "Contact", href: "#contact" },
+  { label: "about", href: "#about", key: "01" },
+  { label: "projects", href: "#projects", key: "02" },
+  { label: "skills", href: "#skills", key: "03" },
+  { label: "experience", href: "#experience", key: "04" },
+  { label: "contact", href: "#contact", key: "05" },
 ];
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [time, setTime] = useState("");
+
+  useEffect(() => {
+    const update = () => {
+      setTime(
+        new Date().toLocaleTimeString("en-US", {
+          hour12: false,
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit",
+        })
+      );
+    };
+    update();
+    const interval = setInterval(update, 1000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
-    <nav className="fixed top-0 z-50 w-full border-b border-border bg-bg/80 backdrop-blur-md">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <a href="#" className="font-mono text-sm font-bold text-primary">
-          {">"}_commander
+    <nav className="fixed top-0 z-50 w-full border-b border-border bg-bg/95 backdrop-blur-sm">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
+        {/* Logo */}
+        <a href="#" className="flex items-center gap-2 text-primary text-glow">
+          <span className="text-text-muted">[</span>
+          <span className="text-xs font-bold">melli@commander</span>
+          <span className="text-text-muted">]</span>
+          <span className="text-text-muted">~$</span>
+          <span className="cursor-blink text-primary">_</span>
         </a>
 
-        {/* Desktop */}
-        <ul className="hidden gap-8 md:flex">
+        {/* Desktop nav */}
+        <div className="hidden items-center gap-1 md:flex">
           {navLinks.map((link) => (
-            <li key={link.href}>
-              <a
-                href={link.href}
-                className="text-sm text-text-muted transition-colors hover:text-primary"
-              >
-                {link.label}
-              </a>
-            </li>
+            <a
+              key={link.href}
+              href={link.href}
+              className="group px-3 py-1.5 text-xs text-text-muted transition-colors hover:text-primary"
+            >
+              <span className="text-text-dim group-hover:text-primary-dim">
+                {link.key}.
+              </span>
+              {link.label}
+            </a>
           ))}
-        </ul>
+          <span className="ml-4 border-l border-border pl-4 text-[10px] text-text-dim">
+            {time}
+          </span>
+        </div>
 
         {/* Mobile toggle */}
         <button
@@ -41,20 +68,9 @@ export default function Navbar() {
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
         >
-          <svg
-            width="24"
-            height="24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-          >
-            {mobileOpen ? (
-              <path d="M6 18L18 6M6 6l12 12" />
-            ) : (
-              <path d="M4 6h16M4 12h16M4 18h16" />
-            )}
-          </svg>
+          <span className="text-xs">
+            {mobileOpen ? "[x] close" : "[=] menu"}
+          </span>
         </button>
       </div>
 
@@ -67,19 +83,19 @@ export default function Navbar() {
             exit={{ height: 0, opacity: 0 }}
             className="overflow-hidden border-t border-border md:hidden"
           >
-            <ul className="flex flex-col gap-4 px-6 py-4">
+            <div className="flex flex-col px-4 py-3">
               {navLinks.map((link) => (
-                <li key={link.href}>
-                  <a
-                    href={link.href}
-                    onClick={() => setMobileOpen(false)}
-                    className="text-sm text-text-muted transition-colors hover:text-primary"
-                  >
-                    {link.label}
-                  </a>
-                </li>
+                <a
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setMobileOpen(false)}
+                  className="border-b border-border/50 py-2.5 text-xs text-text-muted transition-colors hover:text-primary"
+                >
+                  <span className="text-text-dim">{link.key}. </span>
+                  {link.label}
+                </a>
               ))}
-            </ul>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>

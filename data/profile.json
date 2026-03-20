@@ -1,20 +1,40 @@
 {
-  "name": "Alex Commander",
-  "role": "AI Engineer / Full-Stack Developer",
-  "tagline": "Building intelligent systems that bridge the gap between human intent and machine capability.",
+  "name": "Melli Tiara",
+  "role": "Software Engineer | Blockchain Developer",
+  "tagline": "4+ years crafting scalable systems, smart contracts, and production-grade applications for enterprise & web3.",
   "typingTexts": [
-    "AI Engineer",
+    "Software Engineer",
+    "Blockchain Developer",
     "Backend Architect",
-    "Full-Stack Developer",
-    "System Designer"
+    "Smart Contract Developer",
+    "Web3 Builder"
   ],
-  "about": "Senior engineer with 6+ years of experience designing and deploying AI-powered systems, scalable APIs, and production-grade infrastructure. Passionate about clean architecture, developer tooling, and pushing the boundaries of what software can do.",
-  "avatar": "/avatar.png",
-  "resumeUrl": "/resume.pdf",
+  "about": "Experienced software developer with 4+ years designing and deploying applications across enterprise, government, and web3 sectors. Proficient in PHP, Golang, Node.js, Next.js, Solidity, Hardhat, and more. Delivered projects for state-owned, regional, and private companies. Passionate about solving complex problems, optimizing performance, and building high-quality products with cross-functional teams.",
+  "location": "Medan, Indonesia",
+  "email": "melly.tiara92@gmail.com",
+  "phone": "+6281264348080",
+  "resumeUrl": "/resume/Melli Tiara - Software Engineer - Blockchain Developer - Resume.pdf",
   "status": {
-    "system": "All Systems Operational",
+    "system": "SYSTEM ONLINE",
     "uptime": "99.97%",
-    "lastDeploy": "2 hours ago",
-    "activeMissions": 3
-  }
+    "location": "Medan, ID",
+    "clearance": "Full-Stack"
+  },
+  "socials": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/mellitiara",
+      "icon": "github"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/melli-tiara/",
+      "icon": "linkedin"
+    },
+    {
+      "name": "Email",
+      "url": "mailto:melly.tiara92@gmail.com",
+      "icon": "email"
+    }
+  ]
 }

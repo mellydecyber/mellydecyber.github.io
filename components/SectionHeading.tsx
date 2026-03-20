@@ -5,20 +5,27 @@ import { motion } from "framer-motion";
 interface SectionHeadingProps {
   tag: string;
   title: string;
+  index: string;
 }
 
-export default function SectionHeading({ tag, title }: SectionHeadingProps) {
+export default function SectionHeading({ tag, title, index }: SectionHeadingProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
-      className="mb-12"
+      className="mb-10"
     >
-      <span className="mb-2 block font-mono text-xs text-primary">
-        // {tag}
-      </span>
-      <h2 className="text-3xl font-bold tracking-tight">{title}</h2>
+      <div className="flex items-center gap-3 mb-2">
+        <span className="text-text-dim text-[10px]">[{index}]</span>
+        <div className="h-px flex-1 bg-border" />
+      </div>
+      <div className="flex items-baseline gap-3">
+        <span className="text-primary text-glow text-lg font-bold">
+          {title}
+        </span>
+        <span className="text-text-dim text-[10px]">// {tag}</span>
+      </div>
     </motion.div>
   );
 }

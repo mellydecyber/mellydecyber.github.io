@@ -1,58 +1,86 @@
 [
   {
-    "id": "neural-api",
-    "name": "NeuralAPI",
-    "description": "High-throughput ML inference API serving 10K+ requests/sec with auto-scaling and model versioning.",
-    "techStack": ["Python", "FastAPI", "PyTorch", "Docker", "Kubernetes"],
+    "id": "rcti-plus",
+    "name": "RCTI+ Platform",
+    "description": "Large-scale streaming & entertainment platform serving millions of users. Cross-functional feature development, production debugging, and performance optimization.",
+    "techStack": ["PHP", "Golang", "Node.js", "Next.js", "Redis", "Docker", "MySQL"],
     "metrics": {
-      "requests": "10K+/sec",
-      "latency": "<50ms p99",
-      "uptime": "99.99%"
+      "role": "Software Engineer",
+      "stack": "Full-Stack",
+      "scale": "Millions of Users"
     },
-    "github": "https://github.com",
-    "live": "https://example.com",
+    "github": null,
+    "live": "https://www.rctiplus.com",
     "status": "active"
   },
   {
-    "id": "data-forge",
-    "name": "DataForge",
-    "description": "Real-time data pipeline processing 2TB+ daily with automated quality checks and alerting.",
-    "techStack": ["Go", "Apache Kafka", "ClickHouse", "Grafana"],
+    "id": "avarik-saga",
+    "name": "Avarik Saga Universe",
+    "description": "Web3 game with Solidity smart contracts on Unity platform. Built decentralized applications with React.js and Web3.js for immersive blockchain gaming experience.",
+    "techStack": ["Solidity", "ERC721", "ERC20", "React.js", "Web3.js", "Ethers.js", "Unity"],
     "metrics": {
-      "throughput": "2TB+/day",
-      "pipelines": "45 active",
-      "accuracy": "99.8%"
+      "contracts": "ERC721/ERC20",
+      "platform": "Web3 Gaming",
+      "chain": "EVM"
     },
-    "github": "https://github.com",
+    "github": null,
+    "live": null,
+    "status": "completed"
+  },
+  {
+    "id": "eshark-token",
+    "name": "Eshark Token",
+    "description": "Full blockchain ecosystem with smart contracts (ERC721, ERC20) and decentralized applications. Optimized contract operations for minimal latency and gas cost.",
+    "techStack": ["Solidity", "Hardhat", "Truffle", "React.js", "Ethers.js"],
+    "metrics": {
+      "contracts": "ERC721/ERC20",
+      "tools": "Hardhat/Truffle",
+      "focus": "DeFi/NFT"
+    },
+    "github": null,
+    "live": null,
+    "status": "completed"
+  },
+  {
+    "id": "civil-registration",
+    "name": "Civil Registration System",
+    "description": "Information System for Population and Civil Registration Agency. Document services for KTP, KIA, and Family Card for Tebing Tinggi City and Padangsidimpuan City.",
+    "techStack": ["PHP", "Laravel", "MySQL", "Docker"],
+    "metrics": {
+      "cities": "2 Cities",
+      "services": "KTP/KIA/KK",
+      "type": "Gov System"
+    },
+    "github": null,
     "live": null,
     "status": "active"
   },
   {
-    "id": "chain-guard",
-    "name": "ChainGuard",
-    "description": "Smart contract auditing tool with AI-powered vulnerability detection for EVM-compatible chains.",
-    "techStack": ["Solidity", "TypeScript", "Node.js", "OpenAI API"],
+    "id": "hospital-erp",
+    "name": "RS. PHCM Finance System",
+    "description": "Accounting and finance ERP system for RS. PHCM (Pelindo 1 subsidiary). Robust modules for financial analysis, reporting, and decision-making with regulatory compliance.",
+    "techStack": ["PHP", "MySQL", "ERP"],
     "metrics": {
-      "contracts": "500+ audited",
-      "vulns": "1.2K detected",
-      "chains": "5 supported"
+      "type": "Enterprise ERP",
+      "client": "Pelindo 1",
+      "modules": "Finance/Accounting"
     },
-    "github": "https://github.com",
-    "live": "https://example.com",
-    "status": "active"
+    "github": null,
+    "live": null,
+    "status": "completed"
   },
   {
-    "id": "deploy-pilot",
-    "name": "DeployPilot",
-    "description": "Zero-downtime deployment orchestrator with canary releases and automatic rollback.",
-    "techStack": ["Rust", "gRPC", "Terraform", "AWS"],
+    "id": "pdam-system",
+    "name": "PDAM Tirtanadi System",
+    "description": "Comprehensive finance, accounting, warehouse, and budgeting system for PDAM Tirtanadi Medan. Integrated with existing processes and data sources for smooth operations.",
+    "techStack": ["PHP", "MySQL", "ERP"],
     "metrics": {
-      "deployments": "3K+/month",
-      "rollbacks": "<0.1%",
-      "teams": "12 active"
+      "type": "Enterprise",
+      "client": "PDAM Medan",
+      "modules": "Finance/Warehouse"
     },
-    "github": "https://github.com",
+    "github": null,
     "live": null,
-    "status": "maintenance"
+    "status": "completed"
   }
 ]

@@ -1,22 +1,24 @@
 {
-  "email": "hello@alexcommander.dev",
-  "headline": "Let's Build Something Together",
-  "description": "Got a project in mind or want to collaborate? I'm always open to discussing new ideas and opportunities.",
+  "email": "melly.tiara92@gmail.com",
+  "phone": "+6281264348080",
+  "location": "Medan, Indonesia",
+  "headline": "Initiate Connection",
+  "description": "Got a project in mind, need a blockchain developer, or want to collaborate? I'm always open to discussing new ideas and opportunities.",
   "socials": [
     {
       "name": "GitHub",
-      "url": "https://github.com",
+      "url": "https://github.com/mellitiara",
       "icon": "github"
     },
     {
       "name": "LinkedIn",
-      "url": "https://linkedin.com",
+      "url": "https://www.linkedin.com/in/melli-tiara/",
       "icon": "linkedin"
     },
     {
-      "name": "Twitter",
-      "url": "https://twitter.com",
-      "icon": "twitter"
+      "name": "Email",
+      "url": "mailto:melly.tiara92@gmail.com",
+      "icon": "email"
     }
   ]
 }

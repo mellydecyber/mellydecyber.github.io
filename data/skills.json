@@ -1,34 +1,51 @@
 {
   "groups": [
     {
-      "category": "AI / Machine Learning",
-      "icon": "🧠",
-      "items": ["PyTorch", "TensorFlow", "LangChain", "OpenAI API", "Hugging Face", "MLflow"]
+      "category": "Backend",
+      "items": [
+        { "name": "PHP", "level": "expert" },
+        { "name": "Laravel", "level": "advanced" },
+        { "name": "Golang", "level": "intermediate" },
+        { "name": "Node.js", "level": "advanced" },
+        { "name": "C++", "level": "intermediate" }
+      ]
     },
     {
-      "category": "Backend",
-      "icon": "⚙️",
-      "items": ["Python", "Go", "Rust", "Node.js", "FastAPI", "gRPC"]
+      "category": "Blockchain / Web3",
+      "items": [
+        { "name": "Solidity", "level": "advanced" },
+        { "name": "Hardhat", "level": "advanced" },
+        { "name": "Truffle", "level": "advanced" },
+        { "name": "Ethers.js", "level": "advanced" },
+        { "name": "Web3.js", "level": "advanced" }
+      ]
     },
     {
       "category": "Frontend",
-      "icon": "🖥️",
-      "items": ["TypeScript", "React", "Next.js", "Tailwind CSS"]
+      "items": [
+        { "name": "JavaScript", "level": "intermediate" },
+        { "name": "React.js", "level": "intermediate" },
+        { "name": "Next.js", "level": "intermediate" },
+        { "name": "Socket.IO", "level": "advanced" }
+      ]
     },
     {
-      "category": "Infrastructure",
-      "icon": "☁️",
-      "items": ["Docker", "Kubernetes", "Terraform", "AWS", "GCP", "CI/CD"]
+      "category": "Database",
+      "items": [
+        { "name": "MySQL", "level": "advanced" },
+        { "name": "PostgreSQL", "level": "intermediate" },
+        { "name": "MongoDB", "level": "intermediate" },
+        { "name": "Redis", "level": "intermediate" },
+        { "name": "Firebase", "level": "intermediate" }
+      ]
     },
     {
-      "category": "Data",
-      "icon": "📊",
-      "items": ["PostgreSQL", "Redis", "ClickHouse", "Kafka", "Elasticsearch"]
-    },
-    {
-      "category": "Web3",
-      "icon": "🔗",
-      "items": ["Solidity", "Ethers.js", "Hardhat", "EVM"]
+      "category": "DevOps / Tools",
+      "items": [
+        { "name": "Docker", "level": "intermediate" },
+        { "name": "Git", "level": "advanced" },
+        { "name": "AWS Cloud", "level": "basic" }
+      ]
     }
   ]
 }

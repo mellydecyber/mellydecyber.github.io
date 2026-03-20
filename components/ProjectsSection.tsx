@@ -6,12 +6,12 @@ import ProjectCard from "./ProjectCard";
 
 export default function ProjectsSection() {
   return (
-    <section id="projects" className="px-6 py-24">
+    <section id="projects" className="px-4 py-20">
       <div className="mx-auto max-w-4xl">
-        <SectionHeading tag="modules.active" title="Projects" />
-        <div className="grid gap-6 md:grid-cols-2">
-          {projects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
+        <SectionHeading tag="ls ~/projects" title="Active Modules" index="02" />
+        <div className="grid gap-4 md:grid-cols-2">
+          {projects.map((project, i) => (
+            <ProjectCard key={project.id} project={project} index={i} />
           ))}
         </div>
       </div>

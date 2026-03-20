@@ -1,30 +1,44 @@
 [
   {
-    "role": "Senior AI Engineer",
-    "company": "TechCorp AI",
-    "period": "2023 — Present",
-    "description": "Leading the ML platform team. Designed inference infrastructure serving 50M+ predictions/day. Reduced model deployment time from 2 weeks to 4 hours.",
-    "techStack": ["Python", "PyTorch", "Kubernetes", "AWS"]
+    "role": "Software Engineer",
+    "company": "PT. MNC Digital Entertainment — RCTI+",
+    "period": "Oct 2022 — Present",
+    "description": "Ship world-class products cross-functionally with Product, Design, Operations, and Backend teams. Write clear, concise, performant, and tested code. Partner with product management to execute the feature roadmap and help debug production issues across services and levels of the stack.",
+    "techStack": ["PHP", "Golang", "Node.js", "Next.js", "Redis", "Docker", "MySQL"]
   },
   {
-    "role": "Backend Engineer",
-    "company": "DataStream Inc.",
-    "period": "2021 — 2023",
-    "description": "Built real-time data pipelines processing 2TB+ daily. Architected event-driven microservices handling 100K+ events/sec.",
-    "techStack": ["Go", "Kafka", "PostgreSQL", "Docker"]
+    "role": "Founder",
+    "company": "Digital Of Thinking",
+    "period": "May 2019 — Present",
+    "description": "Founded a technology-focused team designing and developing Information Systems for the Population and Civil Registration Agency — document services (KTP, KIA, Family Card) for Tebing Tinggi City and Padangsidimpuan City.",
+    "techStack": ["PHP", "Laravel", "MySQL", "Docker"]
   },
   {
-    "role": "Full-Stack Developer",
-    "company": "WebForge Studio",
-    "period": "2019 — 2021",
-    "description": "Developed and shipped 15+ client projects. Built internal tooling that reduced development time by 40%.",
-    "techStack": ["TypeScript", "React", "Node.js", "MongoDB"]
+    "role": "Blockchain Developer",
+    "company": "Avarik Saga Universe Pte. Ltd",
+    "period": "Jun 2022 — Oct 2022",
+    "description": "Developed Solidity smart contracts integrated with a web3 game built on Unity. Built decentralized applications with React.js, Web3.js, and Ethers.js. Optimized smart contract operations for minimal latency and computational cost.",
+    "techStack": ["Solidity", "ERC721", "ERC20", "React.js", "Web3.js", "Ethers.js"]
   },
   {
-    "role": "Junior Developer",
-    "company": "StartupLab",
-    "period": "2018 — 2019",
-    "description": "First engineering hire. Built MVP from scratch that secured $2M seed funding. Wore many hats across frontend, backend, and DevOps.",
-    "techStack": ["JavaScript", "Python", "Flask", "AWS"]
+    "role": "Blockchain Developer",
+    "company": "Eshark Token",
+    "period": "Dec 2021 — Jul 2022",
+    "description": "Developed smart contracts (ERC721, ERC20) and decentralized applications. Optimized contract operations for minimal latency. Collaborated with cross-functional teams to meet feature rollout timelines.",
+    "techStack": ["Solidity", "Hardhat", "Truffle", "React.js", "Ethers.js"]
+  },
+  {
+    "role": "Backend Developer",
+    "company": "PT. STREAM",
+    "period": "Aug 2020 — Jun 2022",
+    "description": "Full application lifecycle with focus on coding, debugging, and performance optimization. Built clean, efficient web applications with reusable code and libraries. Integrated user-facing elements with server-side logic.",
+    "techStack": ["Laravel", "Node.js", "MySQL", "Redis"]
+  },
+  {
+    "role": "Software Developer",
+    "company": "PT. Rangkai Utama Berjaya",
+    "period": "Jun 2018 — Aug 2020",
+    "description": "Designed and developed accounting, finance, warehouse, and budgeting systems for RS. PHCM (Pelindo 1 subsidiary) and PDAM Tirtanadi Medan. Implemented efficient data management and reporting for financial analysis.",
+    "techStack": ["PHP", "MySQL", "ERP"]
   }
 ]
