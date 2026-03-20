@@ -1,51 +1,29 @@
 {
   "groups": [
     {
-      "category": "Backend",
-      "items": [
-        { "name": "PHP", "level": "expert" },
-        { "name": "Laravel", "level": "advanced" },
-        { "name": "Golang", "level": "intermediate" },
-        { "name": "Node.js", "level": "advanced" },
-        { "name": "C++", "level": "intermediate" }
-      ]
+      "category": "Backend Development",
+      "color": "accent",
+      "items": ["PHP", "Laravel", "Golang", "Node.js", "C++"]
     },
     {
-      "category": "Blockchain / Web3",
-      "items": [
-        { "name": "Solidity", "level": "advanced" },
-        { "name": "Hardhat", "level": "advanced" },
-        { "name": "Truffle", "level": "advanced" },
-        { "name": "Ethers.js", "level": "advanced" },
-        { "name": "Web3.js", "level": "advanced" }
-      ]
+      "category": "Blockchain & Web3",
+      "color": "purple",
+      "items": ["Solidity", "Hardhat", "Truffle", "Ethers.js", "Web3.js", "ERC721", "ERC20"]
     },
     {
       "category": "Frontend",
-      "items": [
-        { "name": "JavaScript", "level": "intermediate" },
-        { "name": "React.js", "level": "intermediate" },
-        { "name": "Next.js", "level": "intermediate" },
-        { "name": "Socket.IO", "level": "advanced" }
-      ]
+      "color": "pink",
+      "items": ["JavaScript", "TypeScript", "React.js", "Next.js", "Socket.IO"]
     },
     {
-      "category": "Database",
-      "items": [
-        { "name": "MySQL", "level": "advanced" },
-        { "name": "PostgreSQL", "level": "intermediate" },
-        { "name": "MongoDB", "level": "intermediate" },
-        { "name": "Redis", "level": "intermediate" },
-        { "name": "Firebase", "level": "intermediate" }
-      ]
+      "category": "Database & Cache",
+      "color": "primary",
+      "items": ["MySQL", "PostgreSQL", "MongoDB", "Redis", "Firebase"]
     },
     {
-      "category": "DevOps / Tools",
-      "items": [
-        { "name": "Docker", "level": "intermediate" },
-        { "name": "Git", "level": "advanced" },
-        { "name": "AWS Cloud", "level": "basic" }
-      ]
+      "category": "DevOps & Cloud",
+      "color": "orange",
+      "items": ["Docker", "Git", "AWS Cloud", "CI/CD"]
     }
   ]
 }

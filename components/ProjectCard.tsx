@@ -7,117 +7,117 @@ interface Project {
   name: string;
   description: string;
   techStack: string[];
-  metrics: Record<string, string | undefined>;
-  github: string | null;
-  live: string | null;
+  category: string;
+  color: string;
+  live?: string | null;
+  client?: string;
   status: string;
 }
 
-const statusColors: Record<string, string> = {
-  active: "text-success",
-  completed: "text-accent",
-  maintenance: "text-warning",
-};
-
-const statusDot: Record<string, string> = {
-  active: "bg-success",
-  completed: "bg-accent",
-  maintenance: "bg-warning",
+const colorMap: Record<string, { border: string; bg: string; text: string; tag: string }> = {
+  accent: {
+    border: "hover:border-accent/30",
+    bg: "bg-accent/10",
+    text: "text-accent",
+    tag: "border-accent/20 text-accent bg-accent/5",
+  },
+  purple: {
+    border: "hover:border-purple/30",
+    bg: "bg-purple/10",
+    text: "text-purple",
+    tag: "border-purple/20 text-purple bg-purple/5",
+  },
+  pink: {
+    border: "hover:border-pink/30",
+    bg: "bg-pink/10",
+    text: "text-pink",
+    tag: "border-pink/20 text-pink bg-pink/5",
+  },
+  primary: {
+    border: "hover:border-primary/30",
+    bg: "bg-primary/10",
+    text: "text-primary",
+    tag: "border-primary/20 text-primary bg-primary/5",
+  },
+  orange: {
+    border: "hover:border-orange/30",
+    bg: "bg-orange/10",
+    text: "text-orange",
+    tag: "border-orange/20 text-orange bg-orange/5",
+  },
 };
 
 export default function ProjectCard({ project, index }: { project: Project; index: number }) {
+  const colors = colorMap[project.color] || colorMap.accent;
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ delay: index * 0.05 }}
-      className="group rounded-lg border border-border bg-bg-terminal transition-all hover:border-primary/20 hover:bg-bg-card-hover"
+      className={`group rounded-xl border border-border bg-bg-card p-5 transition-all duration-300 card-glow ${colors.border} hover:bg-bg-card-hover`}
     >
-      {/* Card header */}
-      <div className="border-b border-border px-4 py-2.5 flex items-center justify-between">
+      {/* Top row */}
+      <div className="flex items-start justify-between mb-3">
         <div className="flex items-center gap-2">
-          <span className={`h-1.5 w-1.5 rounded-full ${statusDot[project.status] || "bg-text-dim"}`} />
-          <span className="text-[10px] text-text-dim">
-            module/{project.id}
+          <span className={`rounded-full border px-2.5 py-0.5 text-[10px] font-medium ${colors.tag}`}>
+            {project.category}
           </span>
-        </div>
-        <div className="flex items-center gap-2">
-          <span className={`text-[10px] uppercase tracking-wider ${statusColors[project.status] || "text-text-dim"}`}>
+          <span
+            className={`flex items-center gap-1 text-[10px] font-mono ${
+              project.status === "active" ? "text-success" : "text-text-dim"
+            }`}
+          >
+            <span className={`h-1.5 w-1.5 rounded-full ${
+              project.status === "active" ? "bg-success animate-pulse" : "bg-text-dim"
+            }`} />
             {project.status}
           </span>
         </div>
+
+        {project.live && (
+          <a
+            href={project.live}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-text-dim hover:text-accent transition-colors"
+            title="Visit live site"
+          >
+            <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+              <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
+            </svg>
+          </a>
+        )}
       </div>
 
-      <div className="p-4 space-y-3">
-        {/* Name */}
-        <div>
-          <h3 className="text-sm font-bold text-text-bright group-hover:text-primary transition-colors">
-            {project.name}
-          </h3>
-        </div>
+      {/* Title */}
+      <h3 className={`text-base font-bold mb-2 text-text-bright group-hover:${colors.text} transition-colors`}>
+        {project.name}
+      </h3>
 
-        {/* Description */}
-        <p className="text-xs text-text-muted leading-relaxed">
-          {project.description}
+      {/* Client (for freelance) */}
+      {project.client && (
+        <p className={`text-xs font-medium mb-2 ${colors.text}`}>
+          Client: {project.client}
         </p>
+      )}
 
-        {/* Metrics */}
-        <div className="grid grid-cols-3 gap-1.5">
-          {Object.entries(project.metrics)
-            .filter((entry): entry is [string, string] => typeof entry[1] === "string")
-            .map(([key, value]) => (
-              <div
-                key={key}
-                className="border border-border bg-bg px-2 py-1.5 text-center"
-              >
-                <div className="text-[10px] font-bold text-primary">
-                  {value}
-                </div>
-                <div className="text-[9px] uppercase tracking-wider text-text-dim mt-0.5">
-                  {key}
-                </div>
-              </div>
-            ))}
-        </div>
+      {/* Description */}
+      <p className="text-sm text-text-muted leading-relaxed mb-4">
+        {project.description}
+      </p>
 
-        {/* Tech Stack */}
-        <div className="flex flex-wrap gap-1">
-          {project.techStack.map((tech) => (
-            <span
-              key={tech}
-              className="text-[10px] text-primary-dim border border-primary/10 bg-primary/5 px-1.5 py-0.5"
-            >
-              {tech}
-            </span>
-          ))}
-        </div>
-
-        {/* Links */}
-        {(project.github || project.live) && (
-          <div className="flex gap-3 pt-1 border-t border-border">
-            {project.github && (
-              <a
-                href={project.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[10px] text-text-dim hover:text-primary transition-colors"
-              >
-                [github]
-              </a>
-            )}
-            {project.live && (
-              <a
-                href={project.live}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[10px] text-text-dim hover:text-accent transition-colors"
-              >
-                [live]
-              </a>
-            )}
-          </div>
-        )}
+      {/* Tech Stack */}
+      <div className="flex flex-wrap gap-1.5">
+        {project.techStack.map((tech) => (
+          <span
+            key={tech}
+            className="rounded-md bg-white/5 border border-border px-2 py-0.5 text-[11px] text-text-muted font-mono"
+          >
+            {tech}
+          </span>
+        ))}
       </div>
     </motion.div>
   );

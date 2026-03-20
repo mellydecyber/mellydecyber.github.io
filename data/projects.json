@@ -1,86 +1,66 @@
-[
-  {
-    "id": "rcti-plus",
-    "name": "RCTI+ Platform",
-    "description": "Large-scale streaming & entertainment platform serving millions of users. Cross-functional feature development, production debugging, and performance optimization.",
-    "techStack": ["PHP", "Golang", "Node.js", "Next.js", "Redis", "Docker", "MySQL"],
-    "metrics": {
-      "role": "Software Engineer",
-      "stack": "Full-Stack",
-      "scale": "Millions of Users"
+{
+  "professional": [
+    {
+      "id": "rcti-plus",
+      "name": "RCTI+ Streaming Platform",
+      "description": "Indonesia's major streaming & entertainment platform under MNC Group, serving millions of daily users. I work cross-functionally shipping features, optimizing performance, and debugging production issues.",
+      "techStack": ["PHP", "Golang", "Node.js", "Next.js", "Redis", "Docker", "MySQL"],
+      "category": "Enterprise",
+      "color": "accent",
+      "live": "https://www.rctiplus.com",
+      "status": "active"
     },
-    "github": null,
-    "live": "https://www.rctiplus.com",
-    "status": "active"
-  },
-  {
-    "id": "avarik-saga",
-    "name": "Avarik Saga Universe",
-    "description": "Web3 game with Solidity smart contracts on Unity platform. Built decentralized applications with React.js and Web3.js for immersive blockchain gaming experience.",
-    "techStack": ["Solidity", "ERC721", "ERC20", "React.js", "Web3.js", "Ethers.js", "Unity"],
-    "metrics": {
-      "contracts": "ERC721/ERC20",
-      "platform": "Web3 Gaming",
-      "chain": "EVM"
+    {
+      "id": "avarik-saga",
+      "name": "Avarik Saga Universe",
+      "description": "Web3 blockchain game built on Unity. I developed the Solidity smart contracts and decentralized applications that power the in-game economy and NFT marketplace.",
+      "techStack": ["Solidity", "ERC721", "ERC20", "React.js", "Web3.js", "Ethers.js"],
+      "category": "Blockchain Gaming",
+      "color": "purple",
+      "live": null,
+      "status": "completed"
     },
-    "github": null,
-    "live": null,
-    "status": "completed"
-  },
-  {
-    "id": "eshark-token",
-    "name": "Eshark Token",
-    "description": "Full blockchain ecosystem with smart contracts (ERC721, ERC20) and decentralized applications. Optimized contract operations for minimal latency and gas cost.",
-    "techStack": ["Solidity", "Hardhat", "Truffle", "React.js", "Ethers.js"],
-    "metrics": {
-      "contracts": "ERC721/ERC20",
-      "tools": "Hardhat/Truffle",
-      "focus": "DeFi/NFT"
+    {
+      "id": "eshark-token",
+      "name": "Eshark Token Ecosystem",
+      "description": "Full DeFi/NFT blockchain ecosystem — smart contracts, token economics, and decentralized applications with optimized gas costs and minimal latency.",
+      "techStack": ["Solidity", "Hardhat", "Truffle", "React.js", "Ethers.js"],
+      "category": "DeFi / NFT",
+      "color": "pink",
+      "live": null,
+      "status": "completed"
+    }
+  ],
+  "freelance": [
+    {
+      "id": "civil-registration",
+      "name": "Civil Registration System",
+      "description": "Government information system for the Population & Civil Registration Agency. Handles document services (KTP, KIA, Family Card) for Tebing Tinggi City and Padangsidimpuan City.",
+      "techStack": ["PHP", "Laravel", "MySQL", "Docker"],
+      "category": "Government",
+      "color": "primary",
+      "client": "Disdukcapil — 2 Cities",
+      "status": "active"
     },
-    "github": null,
-    "live": null,
-    "status": "completed"
-  },
-  {
-    "id": "civil-registration",
-    "name": "Civil Registration System",
-    "description": "Information System for Population and Civil Registration Agency. Document services for KTP, KIA, and Family Card for Tebing Tinggi City and Padangsidimpuan City.",
-    "techStack": ["PHP", "Laravel", "MySQL", "Docker"],
-    "metrics": {
-      "cities": "2 Cities",
-      "services": "KTP/KIA/KK",
-      "type": "Gov System"
+    {
+      "id": "hospital-erp",
+      "name": "RS. PHCM Finance & Accounting",
+      "description": "Enterprise ERP system for RS. PHCM hospital (Pelindo 1 subsidiary). Accounting, finance reporting, and regulatory compliance modules for a major healthcare provider.",
+      "techStack": ["PHP", "MySQL"],
+      "category": "Enterprise ERP",
+      "color": "orange",
+      "client": "Pelindo 1 (State-Owned)",
+      "status": "completed"
     },
-    "github": null,
-    "live": null,
-    "status": "active"
-  },
-  {
-    "id": "hospital-erp",
-    "name": "RS. PHCM Finance System",
-    "description": "Accounting and finance ERP system for RS. PHCM (Pelindo 1 subsidiary). Robust modules for financial analysis, reporting, and decision-making with regulatory compliance.",
-    "techStack": ["PHP", "MySQL", "ERP"],
-    "metrics": {
-      "type": "Enterprise ERP",
-      "client": "Pelindo 1",
-      "modules": "Finance/Accounting"
-    },
-    "github": null,
-    "live": null,
-    "status": "completed"
-  },
-  {
-    "id": "pdam-system",
-    "name": "PDAM Tirtanadi System",
-    "description": "Comprehensive finance, accounting, warehouse, and budgeting system for PDAM Tirtanadi Medan. Integrated with existing processes and data sources for smooth operations.",
-    "techStack": ["PHP", "MySQL", "ERP"],
-    "metrics": {
-      "type": "Enterprise",
-      "client": "PDAM Medan",
-      "modules": "Finance/Warehouse"
-    },
-    "github": null,
-    "live": null,
-    "status": "completed"
-  }
-]
+    {
+      "id": "pdam-system",
+      "name": "PDAM Tirtanadi Integrated System",
+      "description": "Comprehensive finance, accounting, warehouse, and budgeting system for PDAM Tirtanadi Medan — the regional water utility company. Integrated with existing data sources.",
+      "techStack": ["PHP", "MySQL"],
+      "category": "Enterprise ERP",
+      "color": "accent",
+      "client": "PDAM Tirtanadi Medan",
+      "status": "completed"
+    }
+  ]
+}

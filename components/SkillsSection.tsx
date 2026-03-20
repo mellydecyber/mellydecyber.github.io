@@ -4,68 +4,60 @@ import { motion } from "framer-motion";
 import skills from "@/data/skills.json";
 import SectionHeading from "./SectionHeading";
 
-const levelLabel: Record<string, string> = {
-  expert: "███████████████████ 95%",
-  advanced: "████████████████░░░ 80%",
-  intermediate: "████████████░░░░░░░ 60%",
-  basic: "███████░░░░░░░░░░░░ 35%",
-};
-
-const levelColor: Record<string, string> = {
-  expert: "text-primary",
-  advanced: "text-primary-dim",
-  intermediate: "text-accent",
-  basic: "text-warning",
+const colorMap: Record<string, { text: string; dot: string; line: string; leaf: string }> = {
+  accent: { text: "text-accent", dot: "bg-accent", line: "border-accent/20", leaf: "text-accent/70" },
+  purple: { text: "text-purple", dot: "bg-purple", line: "border-purple/20", leaf: "text-purple/70" },
+  pink: { text: "text-pink", dot: "bg-pink", line: "border-pink/20", leaf: "text-pink/70" },
+  primary: { text: "text-primary", dot: "bg-primary", line: "border-primary/20", leaf: "text-primary/70" },
+  orange: { text: "text-orange", dot: "bg-orange", line: "border-orange/20", leaf: "text-orange/70" },
 };
 
 export default function SkillsSection() {
   return (
-    <section id="skills" className="px-4 py-20">
+    <section id="skills" className="px-5 py-24">
       <div className="mx-auto max-w-4xl">
-        <SectionHeading tag="skills --list" title="System Capabilities" index="03" />
+        <SectionHeading title="Skills & Technologies" subtitle="Tools and technologies I work with" color="pink" />
 
-        <div className="space-y-4">
-          {skills.groups.map((group, gi) => (
-            <motion.div
-              key={group.category}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ delay: gi * 0.05 }}
-              className="rounded-lg border border-border bg-bg-terminal overflow-hidden"
-            >
-              {/* Group header */}
-              <div className="border-b border-border px-4 py-2 flex items-center gap-2">
-                <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-                <span className="text-[11px] text-text-bright font-bold">
-                  {group.category}
-                </span>
-                <span className="text-[10px] text-text-dim ml-auto">
-                  {group.items.length} modules
-                </span>
-              </div>
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {skills.groups.map((group, gi) => {
+            const colors = colorMap[group.color] || colorMap.accent;
+            return (
+              <motion.div
+                key={group.category}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ delay: gi * 0.05 }}
+                className="rounded-xl border border-border bg-bg-card p-5 card-glow"
+              >
+                {/* Category header */}
+                <div className="flex items-center gap-2.5 mb-4">
+                  <span className={`h-2.5 w-2.5 rounded-sm ${colors.dot}`} />
+                  <h3 className={`text-sm font-bold ${colors.text}`}>
+                    {group.category}
+                  </h3>
+                </div>
 
-              {/* Skills list */}
-              <div className="p-4 space-y-2">
-                {group.items.map((item) => (
-                  <div
-                    key={item.name}
-                    className="flex items-center gap-3 text-xs"
-                  >
-                    <span className="text-text w-24 shrink-0">
-                      {item.name}
-                    </span>
-                    <span className={`font-mono text-[10px] ${levelColor[item.level]} hidden sm:inline`}>
-                      {levelLabel[item.level]}
-                    </span>
-                    <span className={`text-[10px] uppercase tracking-wider ${levelColor[item.level]} sm:hidden`}>
-                      {item.level}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </motion.div>
-          ))}
+                {/* Tree list */}
+                <div className={`border-l-2 ${colors.line} pl-4 space-y-2`}>
+                  {group.items.map((item, ii) => {
+                    const isLast = ii === group.items.length - 1;
+                    return (
+                      <div key={item} className="relative flex items-center gap-2">
+                        {/* Tree branch */}
+                        <span className={`text-[10px] font-mono ${colors.leaf}`}>
+                          {isLast ? "└──" : "├──"}
+                        </span>
+                        <span className="text-sm text-text">
+                          {item}
+                        </span>
+                      </div>
+                    );
+                  })}
+                </div>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>

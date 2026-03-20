@@ -1,24 +1,31 @@
 {
   "name": "Melli Tiara",
   "role": "Software Engineer | Blockchain Developer",
-  "tagline": "4+ years crafting scalable systems, smart contracts, and production-grade applications for enterprise & web3.",
+  "tagline": "I build scalable systems, smart contracts, and production-grade applications that power real businesses — from government platforms to blockchain ecosystems.",
   "typingTexts": [
     "Software Engineer",
     "Blockchain Developer",
     "Backend Architect",
-    "Smart Contract Developer",
+    "Smart Contract Dev",
     "Web3 Builder"
   ],
-  "about": "Experienced software developer with 4+ years designing and deploying applications across enterprise, government, and web3 sectors. Proficient in PHP, Golang, Node.js, Next.js, Solidity, Hardhat, and more. Delivered projects for state-owned, regional, and private companies. Passionate about solving complex problems, optimizing performance, and building high-quality products with cross-functional teams.",
+  "about": "Software developer with 4+ years of hands-on experience building real-world applications across enterprise, government, and blockchain sectors. I've delivered systems used by millions of users at RCTI+, built smart contracts for Web3 gaming, and designed government information systems serving multiple cities. I thrive on turning complex requirements into clean, working software.",
+  "highlights": [
+    "4+ years building production applications",
+    "Delivered systems for government, enterprise & Web3",
+    "Currently at RCTI+ (MNC Group) — millions of users",
+    "Built smart contracts for blockchain gaming & DeFi",
+    "Founded a tech team delivering civic tech solutions"
+  ],
   "location": "Medan, Indonesia",
   "email": "melly.tiara92@gmail.com",
   "phone": "+6281264348080",
+  "avatar": "/images/avatar.jpg",
   "resumeUrl": "/resume/Melli Tiara - Software Engineer - Blockchain Developer - Resume.pdf",
   "status": {
-    "system": "SYSTEM ONLINE",
-    "uptime": "99.97%",
-    "location": "Medan, ID",
-    "clearance": "Full-Stack"
+    "availability": "Open to opportunities",
+    "experience": "4+ years",
+    "location": "Medan, Indonesia"
   },
   "socials": [
     {
