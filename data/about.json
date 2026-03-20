@@ -1,0 +1,42 @@
+{
+  "section": {
+    "title": "About Me",
+    "subtitle": "A simple introduction to who I am"
+  },
+  "tabs": [
+    { "id": "overview", "label": "My Story" },
+    { "id": "snapshot", "label": "Personal Snapshot" }
+  ],
+  "statusBadge": "Open to opportunities",
+  "stats": [
+    { "value": "7+", "label": "Years Experience", "color": "text-accent", "bg": "bg-accent/10", "border": "border-accent/20" },
+    { "value": "10+", "label": "Projects Delivered", "color": "text-purple", "bg": "bg-purple/10", "border": "border-purple/20" },
+    { "value": "Millions", "label": "Users Impacted", "color": "text-pink", "bg": "bg-pink/10", "border": "border-pink/20" },
+    { "value": "3 Sectors", "label": "Enterprise, Gov, Web3", "color": "text-primary", "bg": "bg-primary/10", "border": "border-primary/20" }
+  ],
+  "overview": {
+    "title": "A little about me",
+    "summary": "I am a software engineer who enjoys turning complex ideas into practical products. I focus on building reliable systems, writing maintainable code, and creating solutions that are useful for real users.",
+    "highlightsTitle": "Core strengths",
+    "highlights": [
+      "Strong ownership from planning to production release",
+      "Clear communication with both technical and non-technical teams",
+      "Hands-on experience in enterprise systems and blockchain products",
+      "Consistent delivery with quality, speed, and reliability"
+    ]
+  },
+  "snapshot": {
+    "title": "At a glance",
+    "items": [
+      { "label": "Current Focus", "value": "Backend systems and blockchain products", "color": "text-accent" },
+      { "label": "Work Style", "value": "Collaborative, clear communication, delivery-oriented", "color": "text-purple" },
+      { "label": "Preferred Roles", "value": "Software Engineer, Backend Engineer, Blockchain Engineer", "color": "text-pink" },
+      { "label": "Location", "value": "Medan, Indonesia", "color": "text-text-bright" },
+      { "label": "Availability", "value": "Open to opportunities", "color": "text-success" }
+    ]
+  },
+  "actions": {
+    "resume": { "label": "Download Resume" },
+    "contact": { "label": "Get In Touch", "href": "#contact" }
+  }
+}

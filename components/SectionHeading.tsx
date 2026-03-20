@@ -3,12 +3,20 @@
 import { motion } from "framer-motion";
 
 interface SectionHeadingProps {
-  tag: string;
   title: string;
-  index: string;
+  subtitle: string;
+  color?: string;
 }
 
-export default function SectionHeading({ tag, title, index }: SectionHeadingProps) {
+const colorMap: Record<string, string> = {
+  accent: "text-accent",
+  purple: "text-purple",
+  pink: "text-pink",
+  primary: "text-primary",
+  orange: "text-orange",
+};
+
+export default function SectionHeading({ title, subtitle, color = "accent" }: SectionHeadingProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -16,16 +24,15 @@ export default function SectionHeading({ tag, title, index }: SectionHeadingProp
       viewport={{ once: true, margin: "-100px" }}
       className="mb-10"
     >
-      <div className="flex items-center gap-3 mb-2">
-        <span className="text-text-dim text-[10px]">[{index}]</span>
-        <div className="h-px flex-1 bg-border" />
-      </div>
-      <div className="flex items-baseline gap-3">
-        <span className="text-primary text-glow text-lg font-bold">
+      <div className="flex items-center gap-4 mb-3">
+        <h2 className="text-2xl font-bold text-text-bright sm:text-3xl">
           {title}
-        </span>
-        <span className="text-text-dim text-[10px]">// {tag}</span>
+        </h2>
+        <div className="hidden sm:block h-px flex-1 bg-gradient-to-r from-border to-transparent" />
       </div>
+      <p className={`text-sm ${colorMap[color] || "text-accent"}`}>
+        {subtitle}
+      </p>
     </motion.div>
   );
 }

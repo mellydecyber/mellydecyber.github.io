@@ -1,13 +1,13 @@
 {
   "email": "melly.tiara92@gmail.com",
-  "phone": "+6281264348080",
-  "location": "Medan, Indonesia",
+  "phone": null,
+  "location": "Jakarta, Indonesia",
   "headline": "Initiate Connection",
   "description": "Got a project in mind, need a blockchain developer, or want to collaborate? I'm always open to discussing new ideas and opportunities.",
   "socials": [
     {
       "name": "GitHub",
-      "url": "https://github.com/mellitiara",
+      "url": "https://github.com/mellydecyber",
       "icon": "github"
     },
     {
